@@ -27,3 +27,27 @@ The code for `PupperCoinSale.sol` is shown here:
 This contract deploys crowdsale and its code is shown here:
 
 ![deploy](Screenshots/deploy.png)
+
+Both `PupperCoinSale.sol` and `PupperCoinSaleDeployer.sol` are combined in the attached file `PupperCoinCrowdsale`.
+
+# Testing and Deploying the Crowdsale
+
+The Crowdsale was originally deployed in `Remix` on my local  `Ganache` chain by connecting to `Injected Web3` and ensuring `MetaMask` is pointed to `localhost:8545`.
+
+![deployed_cont](Screenshots/deployed_cont.png)
+![dep_cont](Screenshots/dep_cont.png)
+
+The Crowdsale worked on my local chain. Here are some screenshots of purchase transactions and of token balances following the transactions.
+
+![purchase](Screenshots/purchase.png)
+
+Following the tests on my local `Ganache`, I deployed the contracts on `Ropsten Test Network`:
+
+Here are the screenshots of the transactions that deployed two contracts, `PupperCoinSaleDeployer.sol` and `PupperCoin.sol`, and also the addresses of these contracts as shown on Etherscan:
+
+`PupperCoinSaleDeployer.sol` 
+![ropstenC1](Screenshots/ropsten_c1.png)
+
+
+`PupperCoin.sol`
+![ropstenC2](Screenshots/ropsten_c2.png)
